@@ -1,5 +1,5 @@
 # Panoramic-Image-Stitching-using-invariant-features
-I have implemented the Panoramic image stitching using invariant feature from scratch. Imlemented the David Lowe paper on Image stitching using Invariants features.
+I have implemented the Panoramic image stitching using invariant feature from scratch. Implemented the David Lowe paper on Image stitching using Invariants features.
 
 NOTE: You can experiment with any images (your own choices). I have experimented with many images. You can check result below. You can find many images in "Image_Data" folder.
 
