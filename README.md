@@ -29,11 +29,11 @@ RESULTS:
 
 Result of tajm1.jpg, tajm2.jpg, tajm3.jpg, tajm4.jpg
 
-![alt text] (https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/tajm_report.JPG)
+![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/tajm_report.JPG)
 
 Result of nature1.jpg, nature2.jpg, nature3.jpg, nature4.jpg, nature5.jpg, nature6.jpg
 
-![alt text] (https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/nature_report.JPG)
+![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/nature_report.JPG)
 
 Result of my1.jpg and my2.jpg
 
