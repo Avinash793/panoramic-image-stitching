@@ -17,8 +17,12 @@ TO RUN CODE:
 - Used SIFT to detect feature and then RANSAC, compute Homography and matched points and warp prespective to get final panoramic image.
 
 RESULTS:
+
+Result of my1.jpg and my2.jpg
 ![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/my_report.JPG)
 
+Result of taj1.jpg and taj2.jpg
 ![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/taj_report.JPG)
 
+Result of room1.jpg and room2.jpg
 ![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/room_report.JPG)
