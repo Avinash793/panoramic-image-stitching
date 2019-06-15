@@ -1,7 +1,7 @@
 # Panoramic-Image-Stitching-using-invariant-features
 I have implemented the Panoramic image stitching using invariant feature from scratch. Imlemented the David Lowe paper on Image stitching using Invariants features.
 
-NOTE: You can experiment with any images (your own choices). I have experimented with many images. You can check result below.
+NOTE: You can experiment with any images (your own choices). I have experimented with many images. You can check result below. You can find many images in "Image_Data" folder.
 
 CREATE DATA:
 - You can create multiple images like tajm1.jpg, tajm2.jpg, tajm3.jpg and tajm4.jpg (shown below) from your desired images (taj.jpg).Make sure there will be some overlapping parts between two consecutive created images in a sequence. then only algorithm will find and match features and create panorama image of all images which you have provided. 
@@ -29,7 +29,11 @@ RESULTS:
 
 Result of tajm1.jpg, tajm2.jpg, tajm3.jpg, tajm4.jpg
 
+![alt text] (https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/tajm_report.JPG)
+
 Result of nature1.jpg, nature2.jpg, nature3.jpg, nature4.jpg, nature5.jpg, nature6.jpg
+
+![alt text] (https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/nature_report.JPG)
 
 Result of my1.jpg and my2.jpg
 
