@@ -17,6 +17,8 @@ TO RUN CODE:
 - Used SIFT to detect feature and then RANSAC, compute Homography and matched points and warp prespective to get final panoramic image.
 
 RESULTS:
+![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/my_report.JPG)
 
-Future Work:
-you can do Image blending after getting panorama image to smooth out the border that you can see.
+![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/taj_report.JPG)
+
+![alt text](https://github.com/AVINASH793/Panoramic-Image-Stitching-using-invariant-features/blob/master/Result/room_report.JPG)
