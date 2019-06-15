@@ -4,29 +4,42 @@ import cv2
 
 #Take picture from folder like: Hill1 & Hill2, scene1 & scene2, my1 & my2, taj1 & taj2, lotus1 & lotus2, beach1 & beach2, room1 & room2
 
-print("Enter left part image name:")
-filename1 = input()
-print("Enter right part image name:")
-filename2 = input()
-imageA = cv2.imread(filename1)
-imageB = cv2.imread(filename2)
+print("Enter the number of images you want to concantenate:")
+no_of_images = int(input())
+print("Enter the image name in order of left to right in way of concantenation:")
+#like taj1.jpg, taj2.jpg, taj3.jpg .... tajn.jpg
+filename = []
 
-height1,width1,channels1 = imageA.shape
-height2,width2,channels2 = imageB.shape
+for i in range(no_of_images):
+    print("Enter the %d image:" %(i+1))
+    filename.append(input())
+
+images = []
+
+for i in range(no_of_images):
+    images.append(cv2.imread(filename[i]))
 
 #We need to modify the image resolution and keep our aspect ratio use the function imutils
-imageA = imutils.resize(imageA,width=400)
-imageB = imutils.resize(imageB,width=400)
 
-imageA = imutils.resize(imageA,height=600)
-imageB = imutils.resize(imageB,height=600)
+for i in range(no_of_images):
+    images[i] = imutils.resize(images[i], width=400)
+
+for i in range(no_of_images):
+    images[i] = imutils.resize(images[i], height=400)
+
 
 panaroma = Panaroma()
-(result, matched_points) = panaroma.image_stitch([imageA, imageB], match_status=True)
+if no_of_images==2:
+    (result, matched_points) = panaroma.image_stitch([images[0], images[1]], match_status=True)
+else:
+    (result, matched_points) = panaroma.image_stitch([images[no_of_images-2], images[no_of_images-1]], match_status=True)
+    for i in range(no_of_images - 2):
+        (result, matched_points) = panaroma.image_stitch([images[no_of_images-i-3],result], match_status=True)
 
 #to show the got panaroma image and valid matched points
-cv2.imshow("Image A", imageA)
-cv2.imshow("Image B", imageB)
+for i in range(no_of_images):
+    cv2.imshow("Image {k}".format(k=i+1), images[i])
+
 cv2.imshow("Keypoint Matches", matched_points)
 cv2.imshow("Panorama", result)
 
