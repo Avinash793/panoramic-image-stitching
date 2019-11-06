@@ -9,7 +9,7 @@ CREATE DATA:
 
 Please install Libraries:
 1. Numpy
-2. OpenCV
+2. OpenCV (version 3.3.0)
 3. imutils
 
 TO RUN CODE:
